@@ -31,7 +31,7 @@ pushd "$SCRIPTDIR/productpage"
   #flooding
   docker build --pull -t "${PREFIX}/examples-bookinfo-productpage-v-flooding:${VERSION}" -t "${PREFIX}/examples-bookinfo-productpage-v-flooding:latest" --build-arg flood_factor=100 .
 popd
-
+/*
 pushd "$SCRIPTDIR/details"
   #plain build -- no calling external book service to fetch topics
   docker build --pull -t "${PREFIX}/examples-bookinfo-details-v1:${VERSION}" -t "${PREFIX}/examples-bookinfo-details-v1:latest" --build-arg service_version=v1 .
@@ -71,3 +71,4 @@ popd
 pushd "$SCRIPTDIR/mongodb"
   docker build --pull -t "${PREFIX}/examples-bookinfo-mongodb:${VERSION}" -t "${PREFIX}/examples-bookinfo-mongodb:latest" .
 popd
+*/
